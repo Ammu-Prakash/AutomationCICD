@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Selenium Automation Tests]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="Ammu.testComponents.Listeners"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="Error Validations Test(failed)" verbose="0">
+    <classes>
+      <class name="Ammu.tests.ErrorValidationTest">
+        <methods>
+          <include name="loginErroValidation"/>
+          <include name="launchApplication"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- Ammu.tests.ErrorValidationTest -->
+    </classes>
+  </test> <!-- Error Validations Test(failed) -->
+</suite> <!-- Failed suite [Selenium Automation Tests] -->
